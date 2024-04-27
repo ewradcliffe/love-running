@@ -84,7 +84,7 @@ nav {
 
 /* Main Content */
 main {
-    background-color: lightblue;
+    background-color: #ffffff;
     /* Make main element take up surplus space to put footer down */
     flex: 1 0 auto;
     margin-top: 80px;
@@ -114,6 +114,14 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -151,6 +159,9 @@ main {
     main {
         margin-top: 95px;
     }
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Media query: laptops and larger (992px and up) */
@@ -159,7 +170,10 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+    /* Gallery */
 
-
+    #photos {
+        column-count: 4;
+    }
 
 
